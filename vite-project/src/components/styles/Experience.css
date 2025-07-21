@@ -1,0 +1,92 @@
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 7rem;
+  justify-content: center;
+}
+
+.experience-left {
+  flex: 1 1 300px;
+}
+
+.experience-left h1 {
+  font-size: 3rem;
+  color: #ab64bd;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.experience-left hr {
+  width: 80%;
+  height: 4px;
+  background-color: #ab64bd;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.experience-right {
+  flex: 2 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.exp-block {
+  display: flex;
+  gap: 2rem;
+}
+
+.exp-block .year {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ab64bd;
+  min-width: 60px;
+}
+
+.exp-block .content h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ab64bd;
+  margin-bottom: 0.2rem;
+}
+
+.exp-block .content h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.exp-block .content p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .experience-left {
+    text-align: center;
+    flex: auto;
+  }
+
+  .exp-block {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .exp-block .year {
+    margin-bottom: 0.5rem;
+  }
+}

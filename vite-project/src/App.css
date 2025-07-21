@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  color: #333;
+}
+
+.section-to-pop {
+  opacity: 0;
+  transform: scale(0.95) translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-to-pop.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+

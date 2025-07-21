@@ -1,0 +1,157 @@
+.contact-section {
+  background-color: #b366c2;
+  color: white;
+  padding: 60px 20px;
+   line-height: 1.6;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-image {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact-info {
+  flex: 1 1 45%;
+}
+
+.contact-info h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  margin: 15px 0;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.email {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.connect-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.social-icons a {
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footerIcon-outer{
+  max-width: 3rem;
+  max-height: 3rem;
+  padding: 0.5rem;
+  background-color: white;
+  color:#b366c2 !important;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.footerIcon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: white;
+  color: #b366c2;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #f2d8fa;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .contact-image,
+  .contact-info {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info h1 {
+    font-size: 32px;
+  }
+
+  .contact-info h2 {
+    font-size: 20px;
+  }
+
+  .email {
+    font-size: 14px;
+  }
+
+  .back-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .divider {
+    margin: 10px auto;
+  }
+}
