@@ -54,12 +54,12 @@
 @media (max-width: 768px) {
   .container-header {
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
   }
 
   .left-header, .right-header {
     flex: unset;
-    height: 50vh;
+    height: 25vh;
     width: 100%;
   }
 

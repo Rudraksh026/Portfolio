@@ -5,14 +5,14 @@ export const Header = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
             entry.target.classList.add("visible");
             observer.unobserve(entry.target); // stop observing after first show
           }
         });
       },
       {
-        threshold: 0.6, // 60% in view
+        threshold: 0.1, // 60% in view
       }
     );
 
